@@ -3,8 +3,13 @@ HyperCloud Studio
 
 Github IO page
 
-LICENSE
-=======
+About Us
+--------
+
+We are a software developers group
+
+License
+-------
 
 The MIT License (MIT)
 
