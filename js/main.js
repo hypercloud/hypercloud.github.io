@@ -86,7 +86,13 @@ jQuery(function($) {
 	var option = {
 		lng: language,
 		customLoad: function(lng, ns, options, loadComplete) {
-			loadComplete(null, resources.dev.translation); 
+//			loadComplete(null, resources.dev.translation); 
+			var url = 'https://rawgit.com/hypercloud/hypercloud.github.io/master/locales/' + lng + '/translation.json';
+			console.log(url);
+			$.getJSON(url, function(data) {
+				// callback with parsed json data
+				loadComplete(null, data); // or loadComplete('some error'); if failed
+			});
 		}
 	};
 	i18n.init(option, function() {
