@@ -37,7 +37,7 @@ jQuery(function($) {
 			url: formURL,
 			data: data
 		}).done(function() {
-			$this.prev().text().fadeIn().delay(3000).fadeOut();
+			$this.prev().text("Email sent!").fadeIn().delay(3000).fadeOut();
 		});
 
 		return false;
