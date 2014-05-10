@@ -36,15 +36,11 @@ jQuery(function($) {
 			type: "POST",
 			url: formURL,
 			data: data
-		}).done(function(data) {
-		    var statusMsg;
-			console.log(data);
-			console.log(data.status);
-			if (data.status === 'sent') {
-				statusMsg = 'Email sent!';
-			} else {
-				statusMsg = 'Failed sending email!';
-			}
+		}).done(function() {
+			statusMsg = 'Email sent!';
+			$this.prev().text(statusMsg).fadeIn().delay(3000).fadeOut();
+		}).fail(function() {
+			statusMsg = 'Failed sending email!';
 			$this.prev().text(statusMsg).fadeIn().delay(3000).fadeOut();
 		});
 
