@@ -11,6 +11,11 @@ jQuery(function($) {
 	var form = $('.contact-form');
 	form.submit(function () {
 		$this = $(this);
+		var postData = $(this).serializeArray();
+		var values = $(this).serialize();
+		console.log(postData);
+		console.log(values);
+		var formURL = $(this).attr("action");
 //		$.post($(this).attr('action'), function(data) {
 //			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
 //		},'json');
@@ -28,7 +33,7 @@ jQuery(function($) {
 					"name": "Junxiang Wei"
 				}]
 			},
-			"async": false
+			"async": true
 		};
 
 		$.ajax({
