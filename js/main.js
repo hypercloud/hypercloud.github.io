@@ -2,7 +2,7 @@ jQuery(function($) {
 
 	$(function(){
 		$('#main-slider.carousel').carousel({
-			interval: 10000,
+			interval: 5000,
 			pause: false
 		});
 	});
@@ -70,8 +70,8 @@ jQuery(function($) {
 		}
 	};
 	
-	i18n.init(option, function() {
-		$("body").i18n();
-	});
+//	i18n.init(option, function() {
+//		$("body").i18n();
+//	});
 	
 });
