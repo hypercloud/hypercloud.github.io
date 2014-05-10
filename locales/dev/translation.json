@@ -1,6 +1,33 @@
-{
-	"services": "Services",
-	"portfolio": "Portfolio",
-	"about-us": "About Us",
-	"contact": "Contact"
+﻿{
+	"brand": "HyperCloud Studio",
+	"navbar": {
+		"services": "Services",
+		"portfolio": "Portfolio",
+		"about-us": "About Us",
+		"contact": "Contact"
+	},
+	"carousel": {
+		"item-1": {
+			"title": "Virtual Team",
+			"desc": "We come from all over the world with huge exprience"
+		},
+		"item-2": {
+			"title": "Super Technology",
+			"desc": "We provide the popularst technology in the IoT world"
+		},
+	}
+	"team-member": {
+		"zhe": {
+			"name": "Zengliang He",
+			"role": "Co-Founder"
+		},
+		"jhou": {
+			"name": "Jie Hou",
+			"role": "Co-Founder"
+		},
+		"jwei": {
+			"name": "Junxiang Wei",
+			"role": "Co-Founder"
+		}
+	}
 }
