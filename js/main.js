@@ -11,9 +11,32 @@ jQuery(function($) {
 	var form = $('.contact-form');
 	form.submit(function () {
 		$this = $(this);
-		$.post($(this).attr('action'), function(data) {
-			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
-		},'json');
+//		$.post($(this).attr('action'), function(data) {
+//			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
+//		},'json');
+
+		var data = {
+			"key": "02wU9zU4BFKK-FNlxs7Q1Q",
+			"message": {
+				"html": "This aggression will not stand",
+				"text": "This aggression will not stand",
+				"subject": "example subject",
+				"from_email": "the-dude@gmail.com",
+				"from_name": "The Dude",
+				"to": [{
+					"email": "kevinprotoss.wei@gmail.com",
+					"name": "Junxiang Wei"
+				}]
+			},
+			"async": false
+		};
+
+		$.ajax({
+			type: "POST",
+			url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+			data: data
+		});
+
 		return false;
 	});
 
