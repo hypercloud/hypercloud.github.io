@@ -42,6 +42,9 @@
 		"form": {
 			"title": "联系我们",
 			"desc": "欢迎发送邮件给我们，我们会在收到邮件后及时与你取得联系.",
+			"username": "姓名",
+			"email": "邮箱地址",
+			"message": "文本消息",
 			"button": "发送"
 		},
 		"address": {

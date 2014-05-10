@@ -43,6 +43,8 @@
 			"title": "Contact Form",
 			"desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
 			"username": "Name",
+			"email": "Email address",
+			"message": "Message",
 			"button": "Send Message"
 		},
 		"address": {
