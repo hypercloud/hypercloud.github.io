@@ -11,10 +11,6 @@ jQuery(function($) {
 	var form = $('.contact-form');
 	form.submit(function () {
 		$this = $(this);
-		var postData = $(this).serializeArray();
-		var values = $(this).serialize();
-		console.log(postData);
-		console.log(values);
 		var formURL = $(this).attr("action");
 //		$.post($(this).attr('action'), function(data) {
 //			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
@@ -23,9 +19,9 @@ jQuery(function($) {
 		var data = {
 			"key": "02wU9zU4BFKK-FNlxs7Q1Q",
 			"message": {
-				"html": "This aggression will not stand",
+				"html": $('#message').val(),
 				"text": $('#message').val(),
-				"subject": "example subject",
+				"subject": "Contact",
 				"from_email": $('#email').val(),
 				"from_name": $('#username').val(),
 				"to": [{
@@ -38,8 +34,10 @@ jQuery(function($) {
 
 		$.ajax({
 			type: "POST",
-			url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+			url: formURL,
 			data: data
+		}).done(function() {
+			$this.prev().text().fadeIn().delay(3000).fadeOut();
 		});
 
 		return false;
