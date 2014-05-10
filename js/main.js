@@ -7,6 +7,27 @@ jQuery(function($) {
 		});
 	});
 
+	//I18n
+	language_complete = navigator.language.split("-");
+	language = (language_complete[0]);
+	console.log("Sprache: %s", language);
+
+	var option = {
+		lng: language,
+		customLoad: function(lng, ns, options, loadComplete) {
+			var url = 'locales/' + lng + '/translation.json';
+			$.getJSON(url, function(data) {
+				// callback with parsed json data
+				console.log(data);
+				loadComplete(null, data); // or loadComplete('some error'); if failed
+			});
+		}
+	};
+
+	i18n.init(option, function() {
+		$("body").i18n();
+	});
+
 	//Ajax contact
 	var form = $('.contact-form');
 	form.submit(function () {
@@ -78,27 +99,6 @@ jQuery(function($) {
 			$portfolio.isotope({ filter: selector });
 			return false;
 		});
-	});
-	
-	//I18n
-	language_complete = navigator.language.split("-");
-	language = (language_complete[0]);
-	console.log("Sprache: %s", language);
-	
-	var option = {
-		lng: language,
-		customLoad: function(lng, ns, options, loadComplete) {
-			var url = 'locales/' + lng + '/translation.json';
-			$.getJSON(url, function(data) {
-				// callback with parsed json data
-				console.log(data);
-				loadComplete(null, data); // or loadComplete('some error'); if failed
-			});
-		}
-	};
-	
-	i18n.init(option, function() {
-		$("body").i18n();
 	});
 	
 });
