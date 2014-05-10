@@ -12,10 +12,6 @@ jQuery(function($) {
 	form.submit(function () {
 		$this = $(this);
 		var formURL = $(this).attr("action");
-//		$.post($(this).attr('action'), function(data) {
-//			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
-//		},'json');
-
 		var data = {
 			"key": "02wU9zU4BFKK-FNlxs7Q1Q",
 			"message": {
@@ -101,8 +97,8 @@ jQuery(function($) {
 		}
 	};
 	
-	i18n.init(option, function() {
-		$("body").i18n();
-	});
+//	i18n.init(option, function() {
+//		$("body").i18n();
+//	});
 	
 });
