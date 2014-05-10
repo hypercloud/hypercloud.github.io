@@ -97,8 +97,8 @@ jQuery(function($) {
 		}
 	};
 	
-//	i18n.init(option, function() {
-//		$("body").i18n();
-//	});
+	i18n.init(option, function() {
+		$("body").i18n();
+	});
 	
 });

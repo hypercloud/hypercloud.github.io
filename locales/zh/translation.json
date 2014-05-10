@@ -33,5 +33,20 @@
 				"role": "创始人"
 			}
 		}
+	},
+	"contact": {
+		"form": {
+			"title": "联系我们",
+			"desc": "欢迎发送邮件给我们，我们会在收到邮件后及时与你取得联系.",
+			"button": "发送"
+		},
+		"address": {
+			"title": "地址",
+			"germany": "<strong>超云年工作室. 斯图加特</strong><br>Stadionstr. 60<br>70771, Leinfelden-Echterdingen<br><abbr title=\"电话\">P:</abbr> +49 (0)171-7424932",
+			"china": "<strong>超云工作室. 上海</strong><br>杨浦区许昌路630弄21号102室<br>上海, 200082<br><abbr title=\"电话\">P:</abbr> +86 (021) 65899049"
+		},
+		"connect": {
+			"title": "关注我们"
+		}
 	}
 }

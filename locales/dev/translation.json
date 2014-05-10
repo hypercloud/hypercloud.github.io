@@ -33,5 +33,20 @@
 				"role": "Co-Founder"
 			}
 		}
+	},
+	"contact": {
+		"form": {
+			"title": "Contact Form",
+			"desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+			"button": "Send Message"
+		},
+		"address": {
+			"title": "Addresses",
+			"germany": "<strong>HyperCloud Studio. Stuttgart</strong><br>Stadionstr. 60<br>70771, Leinfelden-Echterdingen<br><abbr title=\"Phone\">P:</abbr> +49 (0)171-7424932",
+			"china": "<strong>HyperCloud Studio. Shanghai</strong><br>Xuchang Rd 630, Nr 21, Room 102<br>Shanghai, 200082<br><abbr title=\"Phone\">P:</abbr> +86 (021) 65899049"
+		},
+		"connect": {
+			"title": "Follow us"
+		}
 	}
 }
