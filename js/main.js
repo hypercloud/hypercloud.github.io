@@ -38,6 +38,8 @@ jQuery(function($) {
 			data: data
 		}).done(function(data) {
 		    var statusMsg;
+			console.log(data);
+			console.log(data.status);
 			if (data.status === 'sent') {
 				statusMsg = 'Email sent!';
 			} else {
