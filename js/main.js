@@ -18,7 +18,6 @@ jQuery(function($) {
 			var url = 'locales/' + lng + '/translation.json';
 			$.getJSON(url, function(data) {
 				// callback with parsed json data
-				console.log(data);
 				loadComplete(null, data); // or loadComplete('some error'); if failed
 			});
 		}

@@ -17,12 +17,12 @@
 		}
 	},
 	"portfolio": {
-		"title": "作品展示",
-		"desc": ""
+		"title": "曾经的辉煌",
+		"desc": "回溯过往，展望未来"
 	},
 	"team": {
 		"title": "我们的团队",
-		"desc": "Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.",
+		"desc": "我们来自世界各地，我们为你实现需求，我们就是你最佳的合作伙伴.",
 		"member": {
 			"zhe": {
 				"name": "何曾梁",
