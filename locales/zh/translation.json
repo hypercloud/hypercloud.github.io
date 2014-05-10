@@ -9,11 +9,11 @@
 	"carousel": {
 		"item-1": {
 			"title": "虚拟团队",
-			"desc": ""
+			"desc": "我们是由一群位于全世界的精英组成的虚拟开发团队"
 		},
 		"item-2": {
 			"title": "前沿技术",
-			"desc": ""
+			"desc": "最流行，最新潮的IT技术"
 		}
 	},
 	"team": {
@@ -42,7 +42,7 @@
 		},
 		"address": {
 			"title": "地址",
-			"germany": "<strong>超云年工作室. 斯图加特</strong><br>Stadionstr. 60<br>70771, Leinfelden-Echterdingen<br><abbr title=\"电话\">P:</abbr> +49 (0)171-7424932",
+			"germany": "<strong>超云工作室. 斯图加特</strong><br>Stadionstr. 60<br>70771, Leinfelden-Echterdingen<br><abbr title=\"电话\">P:</abbr> +49 (0)171-7424932",
 			"china": "<strong>超云工作室. 上海</strong><br>杨浦区许昌路630弄21号102室<br>上海, 200082<br><abbr title=\"电话\">P:</abbr> +86 (021) 65899049"
 		},
 		"connect": {
