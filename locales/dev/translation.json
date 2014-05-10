@@ -42,6 +42,7 @@
 		"form": {
 			"title": "Contact Form",
 			"desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+			"username": "Name",
 			"button": "Send Message"
 		},
 		"address": {
