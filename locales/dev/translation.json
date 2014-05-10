@@ -16,18 +16,22 @@
 			"desc": "We provide the popularst technology in the IoT world"
 		}
 	},
-	"team-member": {
-		"zhe": {
-			"name": "Zengliang He",
-			"role": "Co-Founder"
-		},
-		"jhou": {
-			"name": "Jie Hou",
-			"role": "Co-Founder"
-		},
-		"jwei": {
-			"name": "Junxiang Wei",
-			"role": "Co-Founder"
+	"team": {
+		"title": "Meet the Team",
+		"desc": "Each member of our team is a guru in the IT field.",
+		"member": {
+			"zhe": {
+				"name": "Zengliang He",
+				"role": "Co-Founder"
+			},
+			"jhou": {
+				"name": "Jie Hou",
+				"role": "Co-Founder"
+			},
+			"jwei": {
+				"name": "Junxiang Wei",
+				"role": "Co-Founder"
+			}
 		}
 	}
 }

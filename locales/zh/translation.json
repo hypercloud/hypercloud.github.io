@@ -16,18 +16,22 @@
 			"desc": ""
 		}
 	},
-	"team-member": {
-		"zhe": {
-			"name": "何曾梁",
-			"role": "创始人"
-		},
-		"jhou": {
-			"name": "侯杰",
-			"role": "创始人"
-		},
-		"jwei": {
-			"name": "魏骏翔",
-			"role": "创始人"
+	"team": {
+		"title": "我们的团队",
+		"desc": "Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.",
+		"member": {
+			"zhe": {
+				"name": "何曾梁",
+				"role": "创始人"
+			},
+			"jhou": {
+				"name": "侯杰",
+				"role": "创始人"
+			},
+			"jwei": {
+				"name": "魏骏翔",
+				"role": "创始人"
+			}
 		}
 	}
 }
