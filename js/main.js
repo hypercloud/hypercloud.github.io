@@ -24,10 +24,10 @@ jQuery(function($) {
 			"key": "02wU9zU4BFKK-FNlxs7Q1Q",
 			"message": {
 				"html": "This aggression will not stand",
-				"text": "This aggression will not stand",
+				"text": $('#message').val(),
 				"subject": "example subject",
-				"from_email": "the-dude@gmail.com",
-				"from_name": "The Dude",
+				"from_email": $('#email').val(),
+				"from_name": $('#username').val(),
 				"to": [{
 					"email": "kevinprotoss.wei@gmail.com",
 					"name": "Junxiang Wei"
