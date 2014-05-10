@@ -471,10 +471,21 @@ a:focus {
 .navbar-default .first a {
   border-radius: 0 0 0 5px;
 }
+.navbar-default .brand {
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 150px;
+  font-size: 20px;
+  font-family: cursive;
+  color: #2e7bcf;
+  line-height: 18px;
+}
 .navbar-default .navbar-brand {
-  margin-right: 50px;
+/*  margin-right: 50px; */
   margin-left: 20px;
-  width: 200px;
+/*  width: 200px; */
+  width: 120px;
   height: 78px;
   background: url(../images/logo.png) no-repeat 0 50%;
 }

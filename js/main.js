@@ -53,51 +53,24 @@ jQuery(function($) {
 		});
 	});
 	
+	//I18n
 	language_complete = navigator.language.split("-");
 	language = (language_complete[0]);
-	console.log("Sprache (root): %s", language);
+	console.log("Sprache: %s", language);
 	
-	var resources  = {
-		en: {
-			translation: {
-				"services": "Services",
-				"menu": {
-					"surname": "Name:",
-					"firstName": "First Name:"
-				},
-				"headline": "Data:",
-				"headline_1": "Daten Common:",
-				"headline_2": "Daten Specific:"
-			}
-		},
-		dev: {
-			translation: {
-				"services": "Dienstleistung",
-				"menu": {
-					"surname": "Dev Name:",
-					"firstName": "Dev First Name:"
-				},
-				"headline": "Data:",
-				"headline_1": "Daten Common:",
-				"headline_2": "Daten Specific:"
-			}
-		}
-	};
 	var option = {
 		lng: language,
 		customLoad: function(lng, ns, options, loadComplete) {
-//			loadComplete(null, resources.dev.translation); 
-			var url = 'locales/' + lng + '/translation.json'
-//			var url = 'https://rawgit.com/hypercloud/hypercloud.github.io/master/locales/' + lng + '/translation.json';
-			console.log(url);
+			var url = 'locales/' + lng + '/translation.json';
 			$.getJSON(url, function(data) {
 				// callback with parsed json data
 				loadComplete(null, data); // or loadComplete('some error'); if failed
 			});
 		}
 	};
+	
 	i18n.init(option, function() {
-//		$("#header").i18n();
 		$("body").i18n();
 	});
+	
 });
