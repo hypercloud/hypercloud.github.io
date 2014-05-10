@@ -37,8 +37,13 @@ jQuery(function($) {
 			url: formURL,
 			data: data
 		}).done(function(data) {
-		    console.log(data);
-			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
+		    var statusMsg;
+			if (data.status === 'sent') {
+				statusMsg = 'Email sent!';
+			} else {
+				statusMsg = 'Failed sending email!';
+			}
+			$this.prev().text(statusMsg).fadeIn().delay(3000).fadeOut();
 		});
 
 		return false;
