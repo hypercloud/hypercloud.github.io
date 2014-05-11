@@ -45,7 +45,7 @@ jQuery(function($) {
 		$("body").i18n();
 	});
 	
-	$('.dropdown-menu a').click(function(){
+	$('.dropdown-menu a').click(function(e){
 		e.preventDefault();
 		console.log('click event');
 		$this = $(this);
