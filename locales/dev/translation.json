@@ -6,6 +6,18 @@
 		"about-us": "About Us",
 		"contact": "Contact"
 	},
+	"dropdown": {
+		"a": {
+			"en": "USA<b class=\"caret\"></b>",
+			"de": "DEU<b class=\"caret\"></b>",
+			"zh": "CHN<b class=\"caret\"></b>"
+		},
+		"li": {
+			"en": "USA",
+			"de": "DEU",
+			"zh": "CHN"
+		}
+	},
 	"carousel": {
 		"item-1": {
 			"title": "Virtual Team",

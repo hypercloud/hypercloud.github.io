@@ -6,6 +6,18 @@
 		"about-us": "关于我们",
 		"contact": "联系方式"
 	},
+	"dropdown": {
+		"a": {
+			"en": "美国<b class=\"caret\"></b>",
+			"de": "德国<b class=\"caret\"></b>",
+			"zh": "中国<b class=\"caret\"></b>"
+		},
+		"li": {
+			"en": "美国",
+			"de": "德国",
+			"zh": "中国"
+		}
+	},
 	"carousel": {
 		"item-1": {
 			"title": "虚拟团队",

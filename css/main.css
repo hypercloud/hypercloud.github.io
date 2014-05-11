@@ -466,7 +466,8 @@ a:focus {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
-  overflow: hidden;
+/* remove because of country selector */
+/*  overflow: hidden; */
 }
 .navbar-default .first a {
   border-radius: 0 0 0 5px;
@@ -489,6 +490,34 @@ a:focus {
   width: 120px;
   height: 78px;
   background: url(../images/logo.png) no-repeat 0 50%;
+}
+.navbar-default .dropdown {
+  float: right;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+/* Dropdown menu */
+.dropdown-menu {
+  top: 70%;
+  min-width: 60px;
+}
+.dropdown-menu>li>a {
+  padding: 0.5em 6px 0.5em 28px;
+}
+a.available-language {
+  background-repeat: no-repeat;
+  background-position: 6px center;
+  padding: 0.5em 6px 0.5em 28px;
+}
+/* Flag icon */
+#en {
+  background-image: url(../images/flags/us.png);
+}
+#de {
+  background-image: url(../images/flags/de.png);
+}
+#zh {
+  background-image: url(../images/flags/zh.png);
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;

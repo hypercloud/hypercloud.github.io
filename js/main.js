@@ -7,11 +7,29 @@ jQuery(function($) {
 		});
 	});
 
-	//I18n
 	language_complete = navigator.language.split("-");
 	language = (language_complete[0]);
 	console.log("Sprache: %s", language);
+	
+	//Language selector
+	var available_languages = {
+	    zh: 'CHN',
+		de: 'DEU',
+		en: 'USA'
+	};
+	
+	if (available_languages.hasOwnProperty(language)) {
+		$("a.language").attr('id', language);
+		$("a.language").attr('data-i18n', '[html]dropdown.a.' + language);
+//		$("a.language").text(available_languages[language]).append('<b class="caret"></b>');
+	} else {
+		//Default language
+		$("a.language").attr('id', 'en');
+		$("a.language").attr('data-i18n', '[html]dropdown.a.en');
+//		$("a.language").text('USA').append('<b class="caret"></b>');
+	}
 
+	//I18n
 	var option = {
 		lng: language,
 		customLoad: function(lng, ns, options, loadComplete) {
@@ -26,7 +44,22 @@ jQuery(function($) {
 	i18n.init(option, function() {
 		$("body").i18n();
 	});
-
+	
+	$('.dropdown-menu a').click(function(){
+		e.preventDefault();
+		console.log('click event');
+		$this = $(this);
+		console.log($(this).attr("id"));
+		var language = $(this).attr("id");
+		$("a.language").attr('id', language);
+		$("a.language").attr('data-i18n', '[html]dropdown.active.' + language);
+		option.lng = language;
+		console.log(option);
+		i18n.init(option, function() {
+			$("body").i18n();
+		});
+	});
+	
 	//Ajax contact
 	var form = $('.contact-form');
 	form.submit(function () {
