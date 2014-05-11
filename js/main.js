@@ -52,7 +52,7 @@ jQuery(function($) {
 		console.log($(this).attr("id"));
 		var language = $(this).attr("id");
 		$("a.language").attr('id', language);
-		$("a.language").attr('data-i18n', '[html]dropdown.active.' + language);
+		$("a.language").attr('data-i18n', '[html]dropdown.a.' + language);
 		option.lng = language;
 		console.log(option);
 		i18n.init(option, function() {
