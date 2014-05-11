@@ -8,6 +8,7 @@ jQuery(function($) {
 	});
 
 	language_complete = navigator.language.split("-");
+	console.log(language_complete);
 	language = (language_complete[0]);
 	console.log("Sprache: %s", language);
 	
@@ -21,12 +22,10 @@ jQuery(function($) {
 	if (available_languages.hasOwnProperty(language)) {
 		$("a.language").attr('id', language);
 		$("a.language").attr('data-i18n', '[html]dropdown.a.' + language);
-//		$("a.language").text(available_languages[language]).append('<b class="caret"></b>');
 	} else {
 		//Default language
 		$("a.language").attr('id', 'en');
 		$("a.language").attr('data-i18n', '[html]dropdown.a.en');
-//		$("a.language").text('USA').append('<b class="caret"></b>');
 	}
 
 	//I18n
@@ -73,10 +72,20 @@ jQuery(function($) {
 				"subject": "Contact",
 				"from_email": $('#email').val(),
 				"from_name": $('#username').val(),
-				"to": [{
-					"email": "kevinprotoss.wei@gmail.com",
-					"name": "Junxiang Wei"
-				}]
+				"to": [
+					{
+						"email": "kevinprotoss.wei@gmail.com",
+						"name": "Junxiang Wei"
+					},
+					{
+						"email": "hezengliang@gmail.com",
+						"name": "Zengliang He"
+					},
+					{
+						"email": "jie.hou85@gmail.com",
+						"name": "Jie Hou"
+					}
+				]
 			},
 			"async": true
 		};
