@@ -4,7 +4,8 @@
 		"services": "Services",
 		"portfolio": "Portfolio",
 		"about-us": "About Us",
-		"contact": "Contact"
+		"contact": "Contact",
+                "blog": "Blog"
 	},
 	"dropdown": {
 		"a": {

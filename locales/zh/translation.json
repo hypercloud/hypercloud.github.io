@@ -4,7 +4,8 @@
 		"services": "服务",
 		"portfolio": "作品展示",
 		"about-us": "关于我们",
-		"contact": "联系方式"
+		"contact": "联系方式",
+                "blog": "博客"
 	},
 	"dropdown": {
 		"a": {

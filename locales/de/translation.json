@@ -4,7 +4,8 @@
 		"services": "Services",
 		"portfolio": "Portfolio",
 		"about-us": "About Us",
-		"contact": "Kontakt"
+		"contact": "Kontakt",
+                "blog": "Blog"
 	},
 	"carousel": {
 		"item-1": {

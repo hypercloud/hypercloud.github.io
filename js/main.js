@@ -108,6 +108,9 @@ jQuery(function($) {
 
 	//smooth scroll
 	$('.navbar-nav > li').click(function(event) {
+		if ($(this).hasClass('external')) {
+			return;
+		}
 		event.preventDefault();
 		var target = $(this).find('>a').prop('hash');
 		$('html, body').animate({
